@@ -10,7 +10,8 @@ namespace RobotVDinosaur
     {
         static void Main(string[] args)
         {
-
+            Dinosaur dino = new Dinosaur();
+            dino.DinoChoice();
         }
     }
 }
