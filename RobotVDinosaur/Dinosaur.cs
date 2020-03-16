@@ -9,7 +9,7 @@ namespace RobotVDinosaur
     class Dinosaur
     {
         string name;
-        int health;
+        public    int health;
         int energy; //Stamina
         int attackPower;
 

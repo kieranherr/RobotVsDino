@@ -29,13 +29,15 @@ namespace RobotVDinosaur
             Console.WriteLine(energy);
             Console.WriteLine(attackPower);
             Console.ReadLine();
+            
         }
 
 
-        public void Attack(Dinosaur Flamingo)
+        public void Attack(Dinosaur Bender)
         {
-            Flamingo.health -= attackPower;
+            Bender.health -= attackPower;
             energy--;
+            Console.WriteLine("Dinos health is now: " + Bender.health);
         }
     }
 }

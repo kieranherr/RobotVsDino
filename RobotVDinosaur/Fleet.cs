@@ -14,13 +14,13 @@ namespace RobotVDinosaur
         Robot Terminator;
         public Fleet()
         {
-            Bender = new Robot("Bender", 100, 25, weapon);
+            Terminator = new Robot("Term", 100, 25, weapon);
             //Ultro = new Robot();
             //Terminator = new Robot();
         }
         public void test()
         {
-            Bender.test();
+            Terminator.test();
         }
 
     }

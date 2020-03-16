@@ -46,21 +46,20 @@ namespace RobotVDinosaur
 
             }
             return attackMoves[choice];
-
         }
         public int DinoAttack()
         {
             //[0] = Bite, [1] = Triple Swipe, [2] = Stomp, [3] = Tail Whip, [4] = Headbutt
-            int[] attackMoves = new int[5] { 12, 15, 20, 15, 10 };
+            int[] attackMoves2 = new int[5] { 12, 15, 20, 15, 10 };
             Console.WriteLine("Which move would you like to do?");
-            int choice = 0;
+            int choice2 = 0;
             Console.WriteLine("1 = Bite, 2 = Triple Swipe, 3 = Stomp, 4 = Tail Whip, 5 = Headbutt.");
-            choice = int.Parse(Console.ReadLine()) - 1;
-            switch (choice)
+            choice2 = int.Parse(Console.ReadLine()) - 1;
+            switch (choice2)
             {
                 case 0:
                     Console.WriteLine("You chose Bite!");
-                    break;
+                    break;      
                 case 1:
                     Console.WriteLine("You chose Triple Swipe!");
                     break;
@@ -79,7 +78,7 @@ namespace RobotVDinosaur
                     break;
 
             }
-            return attackMoves[choice];   
+            return attackMoves2[choice2];
         }
     }
 }
