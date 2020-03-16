@@ -9,7 +9,7 @@ namespace RobotVDinosaur
     class Robot
     {
         string name;
-        int health;
+        public int health;
         int energy; //Stamina
         int attackPower;
         Weapon attack = new Weapon();
@@ -22,15 +22,7 @@ namespace RobotVDinosaur
             this.energy = energy;
             attackPower = weapon.RobotAttack();
         }
-       public void test()
-        {
-            Console.WriteLine(name);
-            Console.WriteLine(health);
-            Console.WriteLine(energy);
-            Console.WriteLine(attackPower);
-            Console.ReadLine();
-            
-        }
+     
 
 
         public void Attack(Dinosaur Bender)
@@ -39,5 +31,16 @@ namespace RobotVDinosaur
             energy--;
             Console.WriteLine("Dinos health is now: " + Bender.health);
         }
+        public void test()
+        {
+            Console.WriteLine(name);
+            Console.WriteLine(health);
+            Console.WriteLine(energy);
+            Console.WriteLine(attackPower);
+            Console.ReadLine();
+            Attack();
+
+        }
+
     }
 }

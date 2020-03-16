@@ -28,8 +28,13 @@ namespace RobotVDinosaur
             Console.WriteLine(attackPower);
             Console.ReadLine();
         }
+        public void Attack(Robot Terminator)
+        {
+            Terminator.health -= attackPower;
+            energy--;
+            Console.WriteLine("Dinos health is now: " + Terminator.health);
+        }
 
 
-     
     }
 }
