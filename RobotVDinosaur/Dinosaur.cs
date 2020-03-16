@@ -105,7 +105,7 @@ namespace RobotVDinosaur
                         Dino3();
                     break;
                     default:
-                        Console.WriteLine("Please choose from one of the listed Dinosaur!");
+                        Console.WriteLine("Please choose from one of the listed Dinosaurs!");
                         choice = int.Parse(Console.ReadLine());
                     break;
             }

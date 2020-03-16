@@ -11,7 +11,12 @@ namespace RobotVDinosaur
         static void Main(string[] args)
         {
             Dinosaur dino = new Dinosaur();
-            dino.DinoChoice();
+            Robot robo = new Robot();
+            int roboAttack;
+            int dinoAttack;
+            roboAttack = robo.Attack();
+            robo.RobotChoice();
+            int robotHealth = robo.LoseHealth(roboAttack);
         }
     }
 }

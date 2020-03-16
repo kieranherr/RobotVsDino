@@ -8,5 +8,15 @@ namespace RobotVDinosaur
 {
     class Fleet
     {
+        Weapon weapon = new Weapon();
+        Robot Bender;
+        Robot Ultro;
+        Robot Terminator;
+        public Fleet()
+        {
+            Bender = new Robot("Bender", 100, 25, 15, weapon);
+            Ultro = new Robot();
+            Terminator = new Robot();
+        }
     }
 }
