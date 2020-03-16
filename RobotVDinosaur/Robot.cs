@@ -12,13 +12,15 @@ namespace RobotVDinosaur
         int health;
         int energy; //Stamina
         int attackPower;
+        Weapon attack = new Weapon();
+
        
         public Robot(string name, int health, int energy, Weapon weapon)
         {
             this.name = name;
             this.health = health;
             this.energy = energy;
-            attackPower = weapon.AttackPower();
+            attackPower = weapon.RobotAttack();
         }
        public void test()
         {
@@ -29,14 +31,11 @@ namespace RobotVDinosaur
             Console.ReadLine();
         }
 
-        
-        public int LoseHealth(int healthLoss)
+
+        public void Attack(Dinosaur Flamingo)
         {
-            health = health - healthLoss;
-            Console.WriteLine("You lost " + healthLoss + "HP!");
-            Console.WriteLine("Your current health is now at: "+health+" HP.");
-            Console.ReadLine();
-            return health;
+            Flamingo.health -= attackPower;
+            energy--;
         }
     }
 }

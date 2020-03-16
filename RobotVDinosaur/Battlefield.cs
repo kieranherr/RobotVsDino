@@ -11,7 +11,10 @@ namespace RobotVDinosaur
         static void Main(string[] args)
         {
             Fleet test2 = new Fleet();
+            Herd test3 = new Herd();
             test2.test();
+            test3.test();
+
   
         }
     }
