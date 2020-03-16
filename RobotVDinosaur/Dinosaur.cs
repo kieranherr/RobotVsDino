@@ -9,7 +9,7 @@ namespace RobotVDinosaur
     class Dinosaur
     {
         string name;
-        public    int health;
+        public int health;
         int energy; //Stamina
         int attackPower;
 
@@ -27,12 +27,14 @@ namespace RobotVDinosaur
             Console.WriteLine(energy);
             Console.WriteLine(attackPower);
             Console.ReadLine();
+            
         }
         public void Attack(Robot Terminator)
         {
             Terminator.health -= attackPower;
             energy--;
             Console.WriteLine("Dinos health is now: " + Terminator.health);
+            Console.ReadLine();
         }
 
 

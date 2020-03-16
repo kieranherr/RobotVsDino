@@ -22,15 +22,7 @@ namespace RobotVDinosaur
             this.energy = energy;
             attackPower = weapon.RobotAttack();
         }
-     
 
-
-        public void Attack(Dinosaur Bender)
-        {
-            Bender.health -= attackPower;
-            energy--;
-            Console.WriteLine("Dinos health is now: " + Bender.health);
-        }
         public void test()
         {
             Console.WriteLine(name);
@@ -38,8 +30,13 @@ namespace RobotVDinosaur
             Console.WriteLine(energy);
             Console.WriteLine(attackPower);
             Console.ReadLine();
-            Attack();
-
+        }
+                public void Attack(Dinosaur Bender)
+        {
+            Bender.health -= attackPower;
+            energy--;
+            Console.WriteLine("Dinos health is now: " + Bender.health);
+            Console.ReadLine();
         }
 
     }

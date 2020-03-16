@@ -8,14 +8,15 @@ namespace RobotVDinosaur
 {
     class Battlefield
     {
-        static void Main(string[] args)
+        public Fleet test2 = new Fleet();
+        public Herd test3 = new Herd();
+        
+   
+
+        public void Simulate()
         {
-            Fleet test2 = new Fleet();
-            Herd test3 = new Herd();
-            test2.test();
-            test3.test();
-            
-  
+
+            test2.Terminator.Attack(test3.Velo);
         }
     }
 }
