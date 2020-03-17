@@ -14,6 +14,7 @@ namespace RobotVDinosaur
         public Dinosaur Indo;
         public Herd()
         {
+            
             Console.WriteLine("You are creating your Velociraptor!");
             Velo = new Dinosaur("Velociraptor", 100, 12, weapon);
             Console.WriteLine("You are creating your Triceratops!");
@@ -30,5 +31,6 @@ namespace RobotVDinosaur
         {
             return Velo.PassHealthDino();
         }
+        
     }
 }
