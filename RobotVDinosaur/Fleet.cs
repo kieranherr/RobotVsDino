@@ -26,6 +26,9 @@ namespace RobotVDinosaur
             Terminator.test();
 
         }
-
+        public  int HealthRobot()
+        {
+            return Terminator.PassHealthRobot();
+        }
     }
 }

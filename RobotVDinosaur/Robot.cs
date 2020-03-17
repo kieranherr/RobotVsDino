@@ -39,5 +39,10 @@ namespace RobotVDinosaur
             Console.ReadLine();
         }
 
+        public int PassHealthRobot()
+        {
+            return health;
+        }
+
     }
 }

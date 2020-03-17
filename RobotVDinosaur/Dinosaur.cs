@@ -36,7 +36,10 @@ namespace RobotVDinosaur
             Console.WriteLine("Dinos health is now: " + Terminator.health);
             Console.ReadLine();
         }
-
+        public int PassHealthDino()
+        {
+            return health;
+        }
 
     }
 }

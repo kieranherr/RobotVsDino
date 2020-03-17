@@ -25,5 +25,9 @@ namespace RobotVDinosaur
         {
             Velo.test();
         }
+        public int HealthDino()
+        {
+            return Velo.PassHealthDino();
+        }
     }
 }
