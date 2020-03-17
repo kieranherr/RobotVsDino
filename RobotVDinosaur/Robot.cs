@@ -35,7 +35,7 @@ namespace RobotVDinosaur
         {
             Bender.health -= attackPower;
             energy--;
-            Console.WriteLine("Dinos health is now: " + Bender.health);
+            Console.WriteLine("Robots health is now: " + Bender.health);
             Console.ReadLine();
         }
 

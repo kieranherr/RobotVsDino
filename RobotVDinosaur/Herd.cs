@@ -20,6 +20,7 @@ namespace RobotVDinosaur
             Tri = new Dinosaur("Triceratops", 150, 7, weapon);
             Console.WriteLine("You are creating your Indominus Rex!");
             Indo = new Dinosaur("Indominus Rex", 200, 5, weapon);
+          
         }
         public void test()
         {

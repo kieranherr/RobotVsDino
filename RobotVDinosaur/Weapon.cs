@@ -45,7 +45,7 @@ namespace RobotVDinosaur
                     break;
 
             }
-            return attackMoves[choice];
+            1return attackMoves[choice];
         }
         public int DinoAttack()
         {

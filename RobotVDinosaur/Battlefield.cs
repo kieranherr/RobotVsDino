@@ -17,15 +17,27 @@ namespace RobotVDinosaur
         {
             int RobotHealth = RobotFleet.HealthRobot();
             int DinoHealth = DinoHerd.HealthDino();
-            while (DinoHealth <= 0 || RobotHealth <=0) {
+            while (DinoHealth > 0 && RobotHealth <0) {
                 RobotHealth = RobotFleet.HealthRobot();
+               
                 DinoHealth = DinoHerd.HealthDino();
+                
                 RobotFleet.Terminator.Attack(DinoHerd.Velo);
+                Console.WriteLine();
                 DinoHerd.Velo.Attack(RobotFleet.Terminator);
 
                 Console.ReadLine();
             }
-            Console.ReadLine();
+            if (RobotHealth > DinoHealth)
+            {
+                Console.WriteLine("Robot wins!");
+                Console.ReadLine();
+            }
+            else
+            {
+                Console.WriteLine("dino wins!");
+                Console.ReadLine();
+            }
         }
     }
 }
