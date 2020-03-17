@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RobotVDinosaur
 {
@@ -11,7 +7,7 @@ namespace RobotVDinosaur
 
         public Weapon()
         {
-           
+
         }
         public int RobotAttack()
         {
@@ -59,7 +55,7 @@ namespace RobotVDinosaur
             {
                 case 0:
                     Console.WriteLine("You chose Bite!");
-                    break;      
+                    break;
                 case 1:
                     Console.WriteLine("You chose Triple Swipe!");
                     break;

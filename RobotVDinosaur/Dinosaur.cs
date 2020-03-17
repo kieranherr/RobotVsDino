@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RobotVDinosaur
 {
@@ -19,15 +15,6 @@ namespace RobotVDinosaur
             this.health = health;
             this.energy = energy;
             attackPower = weapon.DinoAttack();
-        }
-        public void test()
-        {
-            Console.WriteLine(name);
-            Console.WriteLine(health);
-            Console.WriteLine(energy);
-            Console.WriteLine(attackPower);
-            Console.ReadLine();
-            
         }
         public void Attack(Robot Terminator)
         {
